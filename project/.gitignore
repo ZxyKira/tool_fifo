@@ -1,0 +1,7 @@
+# Keil project
+/Listings
+/Objects
+/DebugConfig
+*.uvoptx
+*.uvguix.danny
+EventRecorderStub.scvd
