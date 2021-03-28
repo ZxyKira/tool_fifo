@@ -158,34 +158,34 @@ typedef struct _tool_fifo_api_t{
 }tool_fifo_api_t;
 
 /* *****************************************************************************************
- *    Inline Method
+ *    static inline Method
  */ 
 
 /*-------------------------------------
  *  tool_fifo_flush 
  */ 
-inline void tool_fifo_flush(tool_fifo_t *fifo){  
+static inline void tool_fifo_flush(tool_fifo_t *fifo){  
   fifo->head = fifo->tail = 0;
 }
 
 /*-------------------------------------
  *  tool_fifo_getSize 
  */ 
-inline uint32_t tool_fifo_getSize(tool_fifo_t *fifo){
+static inline uint32_t tool_fifo_getSize(tool_fifo_t *fifo){
   return fifo->itemSz;
 }
 
 /*-------------------------------------
  *  tool_fifo_getCount 
  */ 
-inline uint32_t tool_fifo_getCount(tool_fifo_t *fifo){
+static inline uint32_t tool_fifo_getCount(tool_fifo_t *fifo){
   return fifo->count;
 }
 
 /*-------------------------------------
  *  tool_fifo_getFree 
  */ 
-inline uint32_t tool_fifo_getFree(tool_fifo_t *fifo){
+static inline uint32_t tool_fifo_getFree(tool_fifo_t *fifo){
   if(fifo->head>fifo->tail)
     return (fifo->count-1) - fifo->head + fifo->tail;
   
@@ -199,28 +199,28 @@ inline uint32_t tool_fifo_getFree(tool_fifo_t *fifo){
 /*-------------------------------------
  *  tool_fifo_getUsed 
  */ 
-inline uint32_t tool_fifo_getUsed(tool_fifo_t *fifo){
+static inline uint32_t tool_fifo_getUsed(tool_fifo_t *fifo){
   return fifo->count - tool_fifo_getFree(fifo) - 1;
 }
 
 /*-------------------------------------
  *  tool_fifo_getStatus 
  */ 
-inline uint8_t tool_fifo_getStatus(tool_fifo_t *fifo){
+static inline uint8_t tool_fifo_getStatus(tool_fifo_t *fifo){
   return fifo->config.status;
 }
 
 /*-------------------------------------
  *  tool_fifo_isFull 
  */ 
-inline bool tool_fifo_isFull(tool_fifo_t *fifo){
+static inline bool tool_fifo_isFull(tool_fifo_t *fifo){
   return (tool_fifo_getFree(fifo)==0)?true:false;
 }
 
 /*-------------------------------------
  *  tool_fifo_isEmpty
  */ 
-inline bool tool_fifo_isEmpty(tool_fifo_t *fifo){
+static inline bool tool_fifo_isEmpty(tool_fifo_t *fifo){
   return (tool_fifo_getFree(fifo))==(fifo->count-1)?true:false;
 }
 
