@@ -181,7 +181,6 @@ int tool_fifo_PopMult(tool_fifo_t* _this, void *data, int num)
 /*----------------------------------------
  *  tool_fifo_popHead
  *----------------------------------------*/
-
 bool tool_fifo_popHead(tool_fifo_t* _this, void *data){
   uint8_t *ptr = _this->data;
 
