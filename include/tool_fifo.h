@@ -1,7 +1,7 @@
 /* *****************************************************************************************
  *      File Name    :tool_fifo.h
  *      Create Date  :2018-09-09
- *      Modufy Date  :2021-03-28
+ *      Modufy Date  :2021-04-20
  *      Information :
  */
 #ifndef tool_fifo_H_
@@ -10,24 +10,25 @@
 #include <stdint.h>
 #include <stdbool.h> 
 
+#include "version.h"
+
 #ifdef __cplusplus
 extern "C" {
 #endif //__cplusplus
 
-/**
- * @def    RB_VHEAD(rb)
- * volatile typecasted head index
- */
-#define RB_VHEAD(rb)              (*(volatile uint32_t *) &(rb)->head)
-  
-/**
- * @def    RB_VTAIL(rb)
- * volatile typecasted tail index
- */
-#define RB_VTAIL(rb)              (*(volatile uint32_t *) &(rb)->tail)
+/* *****************************************************************************************
+ *    Version
+ */ 
+#define TOOL_FIFO_VERSION VERSION_DEFINEE(1, 0, 0)
 
 /* *****************************************************************************************
- *    Struct - tool_fifo_t* _this_t
+ *    Macro
+ */ 
+#define TOOL_FIFO_VHEAD(rb)              (*(volatile uint32_t *) &(rb)->head)
+#define TOOL_FIFO_VTAIL(rb)              (*(volatile uint32_t *) &(rb)->tail)
+
+/* *****************************************************************************************
+ *    Struct - tool_fifo_t
  */ 
 typedef struct _tool_fifo_t{
   void *data;
@@ -38,7 +39,7 @@ typedef struct _tool_fifo_t{
 }tool_fifo_t;
 
 /* *****************************************************************************************
- *    Struct - tool_fifo_t* _this_api_t
+ *    Struct - tool_fifo_api_t
  */ 
 typedef struct _tool_fifo_api_t{
   void     (*flush)       (tool_fifo_t* _this);
@@ -82,7 +83,7 @@ static inline uint32_t tool_fifo_getSize(tool_fifo_t* _this){
  *  tool_fifo_t* _this_getCount 
  */ 
 static inline uint32_t tool_fifo_getCount(tool_fifo_t* _this){
-  return RB_VHEAD(_this) - RB_VTAIL(_this);
+  return TOOL_FIFO_VHEAD(_this) - TOOL_FIFO_VTAIL(_this);
 }
 
 
@@ -109,7 +110,7 @@ static inline bool tool_fifo_isFull(tool_fifo_t* _this){
  *  tool_fifo_t* _this_isEmpty
  */ 
 static inline bool tool_fifo_isEmpty(tool_fifo_t* _this){
-  return RB_VHEAD(_this) == RB_VTAIL(_this);
+  return TOOL_FIFO_VHEAD(_this) == TOOL_FIFO_VTAIL(_this);
 }
 
 
