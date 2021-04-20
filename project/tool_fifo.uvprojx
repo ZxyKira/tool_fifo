@@ -10,7 +10,7 @@
       <TargetName>Cortex M4F</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060960::V5.06 update 7 (build 960)::.\ARMCC</pCCUsed>
+      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -185,7 +185,6 @@
             <uocXRam>0</uocXRam>
             <RvdsVP>2</RvdsVP>
             <RvdsMve>0</RvdsMve>
-            <RvdsCdeCp>0</RvdsCdeCp>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -352,7 +351,7 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <ClangAsOpt>4</ClangAsOpt>
+            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -387,11 +386,6 @@
               <FileName>tool_fifo.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\source\tool_fifo.c</FilePath>
-            </File>
-            <File>
-              <FileName>ztool.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\source\ztool.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -586,7 +580,6 @@
             <uocXRam>0</uocXRam>
             <RvdsVP>0</RvdsVP>
             <RvdsMve>0</RvdsMve>
-            <RvdsCdeCp>0</RvdsCdeCp>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -753,7 +746,7 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <ClangAsOpt>4</ClangAsOpt>
+            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -788,11 +781,6 @@
               <FileName>tool_fifo.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\source\tool_fifo.c</FilePath>
-            </File>
-            <File>
-              <FileName>ztool.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\source\ztool.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -987,7 +975,6 @@
             <uocXRam>0</uocXRam>
             <RvdsVP>0</RvdsVP>
             <RvdsMve>0</RvdsMve>
-            <RvdsCdeCp>0</RvdsCdeCp>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -1154,7 +1141,7 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <ClangAsOpt>4</ClangAsOpt>
+            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -1189,11 +1176,6 @@
               <FileName>tool_fifo.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\source\tool_fifo.c</FilePath>
-            </File>
-            <File>
-              <FileName>ztool.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\source\ztool.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -1388,7 +1370,6 @@
             <uocXRam>0</uocXRam>
             <RvdsVP>0</RvdsVP>
             <RvdsMve>0</RvdsMve>
-            <RvdsCdeCp>0</RvdsCdeCp>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -1555,7 +1536,7 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <ClangAsOpt>4</ClangAsOpt>
+            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -1590,11 +1571,6 @@
               <FileName>tool_fifo.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\source\tool_fifo.c</FilePath>
-            </File>
-            <File>
-              <FileName>ztool.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\source\ztool.h</FilePath>
             </File>
           </Files>
         </Group>
