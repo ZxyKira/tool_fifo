@@ -48,13 +48,13 @@ typedef struct _tool_fifo_api_t{
   uint32_t (*getFree)     (tool_fifo_t* _this);
   bool     (*isFull)      (tool_fifo_t* _this);
   bool     (*isEmpty)     (tool_fifo_t* _this);
-  bool     (*init)        (tool_fifo_t* _this, void *buffer, int itemSize, int count);
-  bool     (*insert)      (tool_fifo_t* _this, const void *data);
-  int      (*insertMulti) (tool_fifo_t* _this, const void *data, uint32_t count);
-  bool     (*insertTail)  (tool_fifo_t* _this, const void *data);
-  bool     (*pop)         (tool_fifo_t* _this, void *buffer);
-  int      (*popMulti)    (tool_fifo_t* _this, void *buffer, uint32_t count);
-  bool     (*popHead)     (tool_fifo_t* _this, void *buffer);
+  bool     (*init)        (tool_fifo_t* _this, void* buffer, int itemSize, int count);
+  bool     (*insert)      (tool_fifo_t* _this, const void* data);
+  int      (*insertMulti) (tool_fifo_t* _this, const void* data, int num);
+  bool     (*insertTail)  (tool_fifo_t* _this, const void* data);
+  bool     (*pop)         (tool_fifo_t* _this, void* buffer);
+  int      (*popMulti)    (tool_fifo_t* _this, void* data, int num);
+  bool     (*popHead)     (tool_fifo_t* _this, void* buffer);
 }tool_fifo_api_t;
 
 /* *****************************************************************************************
@@ -125,13 +125,13 @@ extern const tool_fifo_api_t tool_fifo_api;
 /* *****************************************************************************************
  *    Method list
  */ 
-bool tool_fifo_init(tool_fifo_t* _this, void *buffer, int itemSize, int count);
-bool tool_fifo_insert(tool_fifo_t* _this, const void *data);
-int tool_fifo_insertMulti(tool_fifo_t* _this, const void *data, uint32_t count);
-bool tool_fifo_insertTail(tool_fifo_t* _this, const void *data);
-bool tool_fifo_pop(tool_fifo_t* _this, void *buffer);
-int tool_fifo_popMulti(tool_fifo_t* _this, void *buffer, uint32_t count);
-bool tool_fifo_popHead(tool_fifo_t* _this, void *buffer);
+bool tool_fifo_init(tool_fifo_t* _this, void* buffer, int itemSize, int count);
+bool tool_fifo_insert(tool_fifo_t* _this, const void* data);
+int tool_fifo_insertMulti(tool_fifo_t* _this, const void* data, int num);
+bool tool_fifo_insertTail(tool_fifo_t* _this, const void* data);
+bool tool_fifo_pop(tool_fifo_t* _this, void* buffer);
+int tool_fifo_popMulti(tool_fifo_t* _this, void* data, int num);
+bool tool_fifo_popHead(tool_fifo_t* _this, void* buffer);
 
 
 

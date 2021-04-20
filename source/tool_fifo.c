@@ -31,7 +31,7 @@
 /*----------------------------------------
  *  tool_fifo_init
  *----------------------------------------*/ 
-bool tool_fifo_init(tool_fifo_t* _this, void *buffer, int itemSize, int count){
+bool tool_fifo_init(tool_fifo_t* _this, void* buffer, int itemSize, int count){
   _this->data = buffer;
   _this->count = count;
   _this->itemSz = itemSize;
@@ -62,9 +62,9 @@ bool tool_fifo_insert(tool_fifo_t* _this, const void* data){
 
 
 /*----------------------------------------
- *  tool_fifo_insertMulti
+ *  tool_fifo_insertMultii
  *----------------------------------------*/ 
-int tool_fifo_insertMult(tool_fifo_t* _this, const void* data, int num){
+int tool_fifo_insertMulti(tool_fifo_t* _this, const void* data, int num){
   uint8_t *ptr = _this->data;
   int cnt1, cnt2;
 
@@ -122,7 +122,7 @@ bool tool_fifo_insertTail(tool_fifo_t* _this, const void* data){
 /*----------------------------------------
  *  tool_fifo_pop
  *----------------------------------------*/ 
-bool tool_fifo_pop(tool_fifo_t* _this, void *data){
+bool tool_fifo_pop(tool_fifo_t* _this, void* data){
   uint8_t *ptr = _this->data;
 
   /* We cannot pop when queue is empty */
@@ -141,8 +141,7 @@ bool tool_fifo_pop(tool_fifo_t* _this, void *data){
 /*----------------------------------------
  *  tool_fifo_popMulti
  *----------------------------------------*/ 
-int tool_fifo_popMult(tool_fifo_t* _this, void *data, int num)
-{
+int tool_fifo_popMulti(tool_fifo_t* _this, void* data, int num){
   uint8_t *ptr = _this->data;
   int cnt1, cnt2;
 
@@ -181,7 +180,7 @@ int tool_fifo_popMult(tool_fifo_t* _this, void *data, int num)
 /*----------------------------------------
  *  tool_fifo_popHead
  *----------------------------------------*/
-bool tool_fifo_popHead(tool_fifo_t* _this, void *data){
+bool tool_fifo_popHead(tool_fifo_t* _this, void* data){
   uint8_t *ptr = _this->data;
 
   /* We cannot pop when queue is empty */
