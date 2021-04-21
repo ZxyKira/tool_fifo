@@ -23,7 +23,18 @@
 /* *****************************************************************************************
  *  Private Function 
  */
+static uint32_t tool_fifo_getRealCount(uint32_t value){
+  int i;
 
+  for(i=0; i<32; i++){
+    value &= ~(1<<i);
+    if(!value){
+      value = (1<<i);
+      break;
+    }
+  }
+  return value;
+} 
 /* *****************************************************************************************
  *  Public Function 
  */
@@ -32,11 +43,17 @@
  *  tool_fifo_init
  *----------------------------------------*/ 
 bool tool_fifo_init(tool_fifo_t* _this, void* buffer, int itemSize, int count){
+  if(!buffer)
+    return false;
+  
+  if(!count)
+    return false;
+  
   _this->data = buffer;
-  _this->count = count;
+  _this->count = tool_fifo_getRealCount(count);
   _this->itemSz = itemSize;
   _this->head = _this->tail = 0;
-
+  
   return true;
 }
 
