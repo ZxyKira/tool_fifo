@@ -185,7 +185,6 @@
             <uocXRam>0</uocXRam>
             <RvdsVP>2</RvdsVP>
             <RvdsMve>0</RvdsMve>
-            <RvdsCdeCp>0</RvdsCdeCp>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -352,7 +351,7 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <ClangAsOpt>4</ClangAsOpt>
+            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -381,7 +380,7 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Source</GroupName>
+          <GroupName>source</GroupName>
           <Files>
             <File>
               <FileName>tool_fifo.c</FileName>
@@ -391,7 +390,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Include</GroupName>
+          <GroupName>include</GroupName>
           <Files>
             <File>
               <FileName>tool_fifo.h</FileName>
@@ -586,7 +585,6 @@
             <uocXRam>0</uocXRam>
             <RvdsVP>0</RvdsVP>
             <RvdsMve>0</RvdsMve>
-            <RvdsCdeCp>0</RvdsCdeCp>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -753,7 +751,7 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <ClangAsOpt>4</ClangAsOpt>
+            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -782,7 +780,7 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Source</GroupName>
+          <GroupName>source</GroupName>
           <Files>
             <File>
               <FileName>tool_fifo.c</FileName>
@@ -792,7 +790,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Include</GroupName>
+          <GroupName>include</GroupName>
           <Files>
             <File>
               <FileName>tool_fifo.h</FileName>
@@ -987,7 +985,6 @@
             <uocXRam>0</uocXRam>
             <RvdsVP>0</RvdsVP>
             <RvdsMve>0</RvdsMve>
-            <RvdsCdeCp>0</RvdsCdeCp>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -1154,7 +1151,7 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <ClangAsOpt>4</ClangAsOpt>
+            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -1183,7 +1180,7 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Source</GroupName>
+          <GroupName>source</GroupName>
           <Files>
             <File>
               <FileName>tool_fifo.c</FileName>
@@ -1193,7 +1190,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Include</GroupName>
+          <GroupName>include</GroupName>
           <Files>
             <File>
               <FileName>tool_fifo.h</FileName>
@@ -1388,7 +1385,6 @@
             <uocXRam>0</uocXRam>
             <RvdsVP>0</RvdsVP>
             <RvdsMve>0</RvdsMve>
-            <RvdsCdeCp>0</RvdsCdeCp>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -1555,7 +1551,7 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <ClangAsOpt>4</ClangAsOpt>
+            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -1584,7 +1580,7 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Source</GroupName>
+          <GroupName>source</GroupName>
           <Files>
             <File>
               <FileName>tool_fifo.c</FileName>
@@ -1594,7 +1590,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Include</GroupName>
+          <GroupName>include</GroupName>
           <Files>
             <File>
               <FileName>tool_fifo.h</FileName>
@@ -1789,7 +1785,6 @@
             <uocXRam>0</uocXRam>
             <RvdsVP>0</RvdsVP>
             <RvdsMve>0</RvdsMve>
-            <RvdsCdeCp>0</RvdsCdeCp>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -1956,7 +1951,7 @@
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
             <useXO>0</useXO>
-            <ClangAsOpt>4</ClangAsOpt>
+            <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define></Define>
@@ -1985,7 +1980,7 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Source</GroupName>
+          <GroupName>source</GroupName>
           <Files>
             <File>
               <FileName>tool_fifo.c</FileName>
@@ -1995,7 +1990,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Include</GroupName>
+          <GroupName>include</GroupName>
           <Files>
             <File>
               <FileName>tool_fifo.h</FileName>
